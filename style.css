@@ -49,24 +49,3 @@ body {
     animation: pulse 3s 2s infinite linear;
   }
 }
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.6);
-    opacity: 0;
-  }
-  33% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-  }
-}
-
-/* Soon 
-[data-status="running"] { background: rgba(127, 185, 0, 1); }
-[data-status="pending"] { background: rgba(243, 156, 18, 1); }
-[data-status="failed"] { background: rgba(192, 57, 43, 1); }
-*/
