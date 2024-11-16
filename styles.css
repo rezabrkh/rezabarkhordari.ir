@@ -1,7 +1,7 @@
 /* styles.css */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #000;
   color: #fff;
   display: flex;
@@ -19,7 +19,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #f00; /* High contrast red */
+  color: #CFB53B; /* High contrast red */
 }
 
 p {
