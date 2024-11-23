@@ -105,7 +105,7 @@ h5, h6 {
 p, .copyright {
   font-weight: 300;
   font-size: 0.95em;
-  line-height: 1.9;
+  line-height: 1.2;
 }
 
 p a, .copyright a {
@@ -1701,15 +1701,15 @@ blockquote:after {
   08. Portfolio
 ---*/
 .grid {
-  margin: 0 -25px;
+  margin: 0 -8px;
 }
 
 @media screen and (min-width: 992px) {
   .grid .grid-sizer {
-    width: 33.3333%;
+    width: 25%;
   }
   .grid .grid-item {
-    width: 33.3333%;
+    width: 25%;
     position: relative;
   }
   .grid .grid-item.in-view {
@@ -1742,9 +1742,9 @@ blockquote:after {
   }
   .grid .grid-item .thumb, .grid .grid-item .caption {
     position: absolute;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
   }
   .grid .grid-item .thumb {
     top: 25px;
@@ -1763,11 +1763,11 @@ blockquote:after {
   }
   .grid .grid-item .caption .type, .grid .grid-item .caption .description, .grid .grid-item .caption .inner {
     position: absolute;
-    left: 40px;
-    right: 40px;
+    left: 20px;
+    right: 20px;
   }
   .grid .grid-item .caption .type {
-    top: 40px;
+    top: 20px;
     font-size: 11px;
     letter-spacing: 1px;
     color: #fff;
@@ -1779,7 +1779,7 @@ blockquote:after {
     transition: all .3s .3s;
   }
   .grid .grid-item .caption .description, .grid .grid-item .caption .inner {
-    bottom: 40px;
+    bottom: 20px;
     color: #fff;
   }
   .grid .grid-item .caption .description h4, .grid .grid-item .caption .description p, .grid .grid-item .caption .inner h4, .grid .grid-item .caption .inner p {
