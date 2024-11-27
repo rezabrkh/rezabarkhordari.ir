@@ -79,12 +79,12 @@ h1 {
 }
 h2 {
   font-family: Vazirmatn,Montserrat sans-serif;
-  font-weight: 650;
+  font-weight: 680;
 }
 
 h3 {
   font-family: Vazirmatn,Montserrat sans-serif;
-  font-weight: 500;
+  font-weight: 570;
 }
 
 h4 {
@@ -1239,7 +1239,7 @@ img.standalone {
 }
 
 .btn {
-  font-family: "Work Sans", "Helvetica Neue", sans-serif;
+  font-family: vazirmatn, montserrat, sans-serif;
   border-radius: 0;
   border: 0;
   padding: 12px 25px;
@@ -1260,17 +1260,17 @@ img.standalone {
 
 .btn.btn-default:focus {
   color: #fff;
-  background: rgba(46, 46, 46, 0.5);
+  background: rgba(46, 46, 46, 0.8);
   outline: none;
 }
 
 .btn.btn-accent {
-  background: #e0c784;
+  background: #b49749;
   color: #2E2E2E;
 }
 
 .btn.btn-accent:hover, .btn.btn-accent:active {
-  background: rgba(207, 245, 221, 0.5);
+  background: #b78f31c6;
 }
 
 .btn.btn-hollow {
@@ -1281,7 +1281,7 @@ img.standalone {
 }
 
 .btn.btn-hollow:hover, .btn.btn-hollow:active {
-  border-color: rgba(46, 46, 46, 0.5);
+  border-color: rgba(46, 46, 46, 0.8);
 }
 
 .btn.btn-hollow.btn-accent {
@@ -1659,8 +1659,9 @@ blockquote:after {
 }
 
 .plan.highlighted {
-  background: #e0c784;
-  border-bottom: 5px solid #c29e3d;
+  background: hsla(44, 60%, 70%, 0.8);
+  border-bottom: 8px solid #c29e3d;
+  border-TOP: 8px solid #c29e3d;
 }
 
 .gray .plan {
