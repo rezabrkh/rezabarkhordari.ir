@@ -98,6 +98,9 @@ h5, h6 {
 .blogtext {
   text-align: right;
 }
+blockquote {
+  font-family: vazirmatn, montserrat, sans-serif;
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.8em;
@@ -1528,6 +1531,7 @@ ul.breadcrumbs li:last-child:after {
 }
 
 blockquote {
+  font-family: vazirmatn, montserrat, sans-serif;
   padding: 35px 60px 35px 45px;
   margin-bottom: 10px;
   border: 3px solid rgba(46, 46, 46, 0.1);
