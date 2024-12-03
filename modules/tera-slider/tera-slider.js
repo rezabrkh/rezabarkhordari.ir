@@ -32,13 +32,13 @@ Made by Themanoid
             $mousePos.x = e.pageX - $offset.left;
             $mousePos.y = e.pageY - $offset.top;
             if($mousePos.x > $sldr.width()/2) {
-              $sldr.find('.slides').css('cursor', 'url(/modules/tera-slider/slide-right-dark.png) 5 -25, e-resize');
+              $sldr.find('.slides').css('cursor', 'url(slide-right-dark.png) 5 -25, default');
               if($('body').hasClass('dark-hero'))
-                $sldr.find('.slides').css('cursor', 'url(/modules/tera-slider/slide-right.png) 5 -25, e-resize');
+                $sldr.find('.slides').css('cursor', 'url(slide-right.png) 5 -25, default');
             } else {
-              $sldr.find('.slides').css('cursor', 'url(/modules/tera-slider/slide-left-dark.png) 5 -25, w-resize');
+              $sldr.find('.slides').css('cursor', 'url(slide-left-dark.png) 5 -25, default');
               if($('body').hasClass('dark-hero'))
-                $sldr.find('.slides').css('cursor', 'url(/modules/tera-slider/slide-left.png) 5 -25, w-resize');
+                $sldr.find('.slides').css('cursor', 'url(slide-left.png) 5 -25, default');
             }
             if($mousePos.y > ($sldr.height() - 15)) {
               $sldr.css('cursor', 'default');
@@ -109,23 +109,6 @@ Made by Themanoid
         });
     }
 
-    $('body').on('click', '.slider-trigger', function(e){
-      e.stopPropagation();
-      var dataTrigger = parseInt($(this).attr('data-trigger'));
-      toggleSlide($(this).parent().parent(),null,dataTrigger);
-      e.preventDefault();
-    });
-
-    $('body').on('click', '.slider .slides', function(){
-        toggleSlide($(this).parent(),null,trigger);
-        var s = $(this).parent();
-        var autoSlide = s.attr('auto-slide');
-        if (typeof autoSlide !== typeof undefined && autoSlide !== false) {
-            clearInterval($autoSlide);
-            $autoSlide = setInterval( function() { toggleSlide(s,$autoSlideDirection,trigger); }, 4500 );
-        }
-    });
-
     function toggleSlide(e,d,n) {
 
         // Slide controls
@@ -146,7 +129,7 @@ Made by Themanoid
           $curVideo.addClass('pause');
         }
         if($curVideo.length == 1 && $transition == 'slide'){
-          $delay = 500; // This fixes a performance issue
+          $delay = 300; // This fixes a performance issue
         }
 
         // If direction is set
@@ -210,7 +193,7 @@ Made by Themanoid
           if($transition == 'slide' && $slideCount != 1 && $newSlide != $activeSlideIndex){
             $slides.css({ 'transform': 'translate3d(-'+$sliderWidth*($newSlide)+'px, 0, 0)'}) // Using translate3d for performance boost
             e.find('.slide').css({ 'transform': 'scale(1)'});
-            $activeSlide.css({ 'transform': 'scale(.7)'});
+            $activeSlide.css({ 'transform': 'scale(1)'});
             sliderResize();
           }
           if($transition == 'fade' && $slideCount != 1 && $newSlide != $activeSlideIndex){

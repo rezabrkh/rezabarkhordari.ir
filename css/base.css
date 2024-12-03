@@ -34,7 +34,24 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+.webfolio{
 
+}
+.mobilefolio{
+
+}
+
+@media screen and (max-width: 768px) {
+  .webfolio {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobilefolio {
+    display: none;
+  }
+}
 
 
 ::-moz-selection {
@@ -1312,7 +1329,7 @@ img.standalone {
 }
 
 .carousel {
-  margin: 0 0 100px;
+  margin: 0 0 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1852,12 +1869,12 @@ blockquote:after {
 
 @media screen and (max-width: 992px) {
   .grid .grid-sizer {
-    width: 90%;
+    width: 50%;
   }
   .grid .grid-item {
-    margin: 25px 25px 10px;
-    width: 90%;
-    display: inline-block;
+    width: 49%;
+    position: relative;
+    display: block;
     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
   }
   .grid .grid-item .thumb {
@@ -1982,39 +1999,6 @@ blockquote:after {
   color: #2E2E2E;
 }
 
-@media screen and (max-width: 768px) {
-  .grid .grid-item {
-    width: 88%;
-  }
-}
-
-.grid.no-spacing {
-  margin: 0;
-}
-
-.grid.no-spacing .grid-item {
-  overflow: hidden;
-}
-
-.grid.no-spacing .grid-item .thumb, .grid.no-spacing .grid-item .caption {
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-}
-
-.grid.no-spacing .grid-item .thumb {
-  top: -1px;
-}
-
-.grid.no-spacing .grid-item:hover .caption {
-  top: -1px;
-}
-
-@media screen and (max-width: 768px) {
-  .grid.no-spacing {
-    margin: -25px -25px 15px;
-  }
-}
 
 /*---
   09. Sections
@@ -2331,7 +2315,7 @@ ul.comments li.comment .info {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .grid .grid-item.contact-form {
     width: 100% !important;
   }
@@ -2388,7 +2372,7 @@ ul.comments li.comment .info {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .grid .contact-details {
     width: 100% !important;
     margin: 0;
@@ -2674,7 +2658,7 @@ Made by Themanoid
 
 .slider ul.slides li.slide .thumb {
   max-width: 80%;
-  margin: 50px 20px;
+  margin: 10px 10px;
   display: inline-block;
 }
 
@@ -2713,9 +2697,7 @@ Made by Themanoid
   opacity: .2;
 }
 
-.slider ul.slides li.slide a {
-  cursor: pointer !important;
-}
+
 
 .slider ul.slides li.slide .btn {
   margin-top: 25px;
@@ -2781,7 +2763,7 @@ Made by Themanoid
   height: 15px;
   width: 15px;
   border-radius: 15px;
-  cursor: pointer;
+  
   -webkit-transition: background .3s;
   transition: background .3s;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
