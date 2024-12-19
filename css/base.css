@@ -44,8 +44,9 @@
 @media screen and (max-width: 768px) {
   .webfolio {
     display: none;
-  }
-}
+      }
+
+    }
 
 @media screen and (min-width: 768px) {
   .mobilefolio {
